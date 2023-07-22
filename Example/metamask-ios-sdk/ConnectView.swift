@@ -105,6 +105,8 @@ struct ConnectView: View {
                                         errorMessage = error.localizedDescription
                                         showError = true
                                         print("Connection error: \(errorMessage)")
+                                    case .finished:
+                                        print("something")
                                     default: break
                                     }
                                 }, receiveValue: { result in
